@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/vendredi"
+        android:layout_width="64dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="208dp"
+        android:text="Vendredi"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/jeudi"
+        android:layout_width="66dp"
+        android:layout_height="25dp"
+        android:text="Jeudi"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/Disponibilité"
+        app:layout_constraintTop_toBottomOf="@+id/lundi" />
+
+    <CheckBox
+        android:id="@+id/mercredi"
+        android:layout_width="73dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:text="Mecredi"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Combobox_Asso" />
+
+    <CheckBox
+        android:id="@+id/mardi"
+        android:layout_width="66dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="29dp"
+        android:text="Mardi"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/lundi"
+        app:layout_constraintTop_toBottomOf="@+id/Combobox_Asso" />
+
+    <CheckBox
+        android:id="@+id/lundi"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="29dp"
+        android:text="Lundi"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/Disponibilité"
+        app:layout_constraintTop_toBottomOf="@+id/Combobox_Asso" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="312dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="436dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/debutant"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="Debutant"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/intermediaire"
+            android:layout_width="134dp"
+            android:layout_height="36dp"
+            android:text="Intermediaire"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/Haut"
+            android:layout_width="75dp"
+            android:layout_height="28dp"
+            android:text="Haut"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/mdp_saisie"
+        android:layout_width="189dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/confirm_mdp_saisie"
+        android:layout_width="189dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/Combobox_Asso"
+        android:layout_width="215dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Confirm"
+        android:layout_width="86dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="188dp"
+        android:text="Comfirmer le mot de passe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pseudo_saisie"
+        android:layout_width="189dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="350dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Inscription Multi-associations sportives"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Inscriptions"
+        android:layout_width="105dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:text="Inscriptions"
+        android:textColor="#ECA741"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/titre"
+        app:layout_constraintTop_toBottomOf="@+id/titre" />
+
+    <TextView
+        android:id="@+id/pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:text="Pseudo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="144dp"
+        android:text="Mot de passe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Association"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:text="Association"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Disponibilité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="316dp"
+        android:text="Disponibilité"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Commentaire_cadre"
+        android:layout_width="216dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Commentaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="148dp"
+        android:text="Commentaire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/valide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="80dp"
+        android:text="Validé"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Commentaire_cadre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
